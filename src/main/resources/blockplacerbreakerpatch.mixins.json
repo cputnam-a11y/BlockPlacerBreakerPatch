@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "blockplacerbreakerpatch.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BreakerBlockMixin",
+    "BreakerScreenHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

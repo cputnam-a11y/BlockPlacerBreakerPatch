@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "blockplacerbreakerpatch",
+	"version": "${version}",
+	"name": "BlockPlacerBreakerPatch",
+	"description": "A small patch to Block Breaker & Block Placer adding tweaks I think are important",
+	"authors": [
+		"cputnam-a11y"
+	],
+	"contact": {
+		"sources": "https://github.com/cputnam-a11y/BlockPlacerBreakerPatch"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blockplacerbreakerpatch/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"blockplacerbreakerpatch.BlockPlacerBreakerPatch"
+		]
+	},
+	"mixins": [
+		"blockplacerbreakerpatch.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"breakerplacer": "~1.0.2+1.21"
+	}
+}
