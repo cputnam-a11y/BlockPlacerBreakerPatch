@@ -3,10 +3,18 @@
   "package": "blockplacerbreakerpatch.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BaseBlockEntityMixin",
+    "BlockEntityMixin",
+    "BreakerBlockEntityMixin",
     "BreakerBlockMixin",
-    "BreakerScreenHandlerMixin"
+    "BreakerScreenHandlerMixin",
+    "LootableContainerBlockEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+  },
+  "client": [
+    "client.ClientPlayerInteractionManagerMixin",
+    "client.MatrixStackMixin"
+  ]
 }
