@@ -34,11 +34,11 @@ public class BreakerBlockEntityConfigurationRenderer implements WorldRenderEvent
             matrixStack.translate(blockCenter.x, blockCenter.y, blockCenter.z);
             // 0.5, 0.51, 0.5
             Vec3d pos1 = Vec3d.ZERO.add(0.5, 0.51, 0.5);
-            // -1.5, 0.51, 0.5
+            // -0.5, 0.51, 0.5
             Vec3d pos2 = Vec3d.ZERO.add(0.5, 0.51, 0.5).subtract(1, 0, 0);
-            // -1.5, 0.51, -1.5
+            // -0.5, 0.51, -0.5
             Vec3d pos3 = Vec3d.ZERO.add(0.5, 0.51, 0.5).subtract(1, 0, 1);
-            // 0.5, 0.51, -1.5
+            // 0.5, 0.51, -0.5
             Vec3d pos4 = Vec3d.ZERO.add(0.5, 0.51, 0.5).subtract(0, 0, 1);
             // generally set up the render system the way I want it
             setupRenderSystem();
